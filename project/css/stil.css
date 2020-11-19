@@ -1,0 +1,238 @@
+body {
+    background-color: #405A67;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%;
+}
+
+footer {
+    background-color: white;
+    color: #405A67;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 2%;
+}
+
+nav {
+    background-color: white;
+    color: #405A67;
+    width: 100%;
+    position: –webkit–sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405A67;
+}
+
+nav a:hover {
+    color: #405A67;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #405A67;
+}
+
+.nav-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-flex-item {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+/* .nav-flex-item:hover {
+    color: white;
+    background-color: #405A67;
+} */
+
+.header-hintergrund {
+    background-image: url("../bilder/huhn-mit-gelber-warnweste.jpg");
+    background-size: 100%;
+    background-position: 20% 35%;
+    background-repeat: no-repeat;
+    position: relative; 
+    height: 60vh;
+}
+
+.header-text {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(134, 170, 189, 0.4);
+}
+
+.header-text h1 {
+    /*background-color: rgba(64, 90, 103,0.5);*/
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.vorteile-flex-container {
+    display: flex;
+    background-color: #405A67;
+    color: white;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.vorteile-flex-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    color:  #405A67;
+    margin: 1.8rem;
+    padding: 6px;
+    text-align: center;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    flex-grow: 1; 
+}
+
+.vorteile-flex-item img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+#beschreibung h2 {
+    text-align: center;
+}
+
+.beschreibung {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px dotted white;
+    padding: 1rem 4rem;
+}
+
+.beschreibung p {
+    margin: 0 0 1em 0;
+}
+
+.kundenmeinung-flex-container {
+    background-color: #405A67;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    margin: 20px;
+    padding: 3px;
+}
+
+.kundenmeinung-flex-item {
+    /* flex-basis: 40%; */
+    background-color: #86aabd;
+    color: #405A67;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 20px;
+    text-align: center; 
+}
+
+.kundenmeinung-flex-item img {
+    width: 15%;
+    float: left;
+    margin-right: 2rem;
+}
+
+.kundenmeinung-flex-item p::before {
+    content: ">> ";
+    color: #405A67; 
+    font-weight: bold;
+}
+
+.kundenmeinung-flex-item p::after {
+    content: " << ";
+    color: #405A67; 
+    font-weight: bold;
+}
+
+#bestellung {
+    text-align: center;
+}
+
+fieldset {
+    border: 1px dotted white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+input {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+textarea {
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+.anmerkung {
+    font-size: 70%;
+}
+#daten input {
+    width: 50%;
+    padding: 1rem;
+}
+
+button {
+    background-color: #86aabd;
+    color: #405A67; 
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .beschreibung {
+        column-count: 2;
+        padding: 1rem 4rem;
+        column-gap: 2rem;
+        column-rule: 1px dotted white;
+    }
+
+    .kundenmeinung-flex-container {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .beschreibung {
+        column-count: 1;
+        padding: 1rem 4rem;
+    }
+}
